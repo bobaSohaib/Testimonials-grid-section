@@ -34,7 +34,7 @@ body{
 .name-box img{
     border-radius: 50%;
     border: solid white 1px;
-    width: 40px;
+    width: 30px;
 }
 .name-box p{
     margin: 0;
@@ -50,23 +50,25 @@ body{
     font-weight: 500;
 }
 .main-p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 .sub-p{
-    font-size: 16px;
+    font-size: 13px;
     line-height: 22px;
     color: hsl(0, 0%, 81%) !important;
 }
 .purple{
     grid-column: 2 span;
+    box-shadow: rgba(64, 68, 72, 0.2) 0px 8px 24px;
 }
 .grey{
     background-color: #49556A;
+    box-shadow: rgba(64, 68, 72, 0.2) 0px 8px 24px;
 }
 .black{
     grid-column: 2 span;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(64, 68, 72, 0.2) 0px 8px 24px;
 }
 .black .main-p{
     color: #d3d3d3;
@@ -74,11 +76,11 @@ body{
 #kira{
     background-color: white;
     grid-row: 2 span;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(64, 68, 72, 0.2) 0px 8px 24px;
 }
 .white{
     background-color: white;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    box-shadow: rgba(64, 68, 72, 0.2) 0px 8px 24px;
 }
 .white p,#kira p{
     color: black !important;
@@ -88,6 +90,7 @@ body{
 }
 .black{
     background-color: hsl(219, 29%, 14%);
+    box-shadow: rgba(64, 68, 72, 0.2) 0px 8px 24px;
 }
 @media (max-width:900px){
     body{
