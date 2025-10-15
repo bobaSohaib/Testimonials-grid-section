@@ -1,0 +1,124 @@
+*{
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+.cards{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    background-color: hsl(263, 55%, 52%);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.card p{
+    color: white;
+}
+.name-box{
+    display: flex;
+    width: 180px;
+    align-items: center;
+    gap: 20px;
+
+}
+.name-box img{
+    border-radius: 50%;
+    border: solid white 1px;
+    width: 40px;
+}
+.name-box p{
+    margin: 0;
+}
+.graduate{
+    font-size: 13px;
+    color: rgb(193, 193, 193) !important;
+}
+.white .graduate,#kira .graduate{
+    color: rgb(110, 110, 110) !important;
+}
+.name{
+    font-weight: 500;
+}
+.main-p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sub-p{
+    font-size: 16px;
+    line-height: 22px;
+    color: hsl(0, 0%, 81%) !important;
+}
+.purple{
+    grid-column: 2 span;
+}
+.grey{
+    background-color: #49556A;
+}
+.black{
+    grid-column: 2 span;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.black .main-p{
+    color: #d3d3d3;
+}
+#kira{
+    background-color: white;
+    grid-row: 2 span;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.white{
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.white p,#kira p{
+    color: black !important;
+}
+#kira .sub-p{
+    color: hsl(0, 0%, 36%) !important;
+}
+.black{
+    background-color: hsl(219, 29%, 14%);
+}
+@media (max-width:900px){
+    body{
+        display: block;
+        padding: 50px;
+        height: auto;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        margin-bottom: 50px;
+
+    }
+}
+.purple{
+    position: relative;
+    overflow: hidden;
+}
+.purple .name-box,.purple .main-p,.purple.sub-p{
+    z-index: 1;
+    position: relative;
+}
+.purple >img{
+    position: absolute;
+    right: 80px;
+    top: 0;
+}
+@media (max-width:580px){
+    .purple >img{
+        display: none;
+    }
+    
+}
